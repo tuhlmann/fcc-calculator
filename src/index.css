@@ -1,0 +1,68 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+#calc-container  {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.calc-grid-container {
+   display: grid;
+   grid-template-rows: 2fr repeat(5, 1fr);
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 5px;
+}
+
+.calc-grid-container .box {
+  /* margin: 2px; */
+  align-self: center;
+}
+
+.calc-grid-container .box .btn {
+  width: 100%;
+}
+
+.calc-grid-container .box.calc-display
+{
+    grid-area: 1 / 1 / span 1 / span 4;
+}
+
+.calc-grid-container .box.btn-zero
+{
+    grid-area: 5 / 2 / span 1 / span 2;
+}
+
+.calc-grid-container .box.btn-solve
+{
+    grid-area: 6 / 1 / span 1 / span 3;
+}
+
+.calc-grid-container .calc-display
+{
+    width: 100%;
+    background-color: antiquewhite;
+    color: darkslategrey;
+    font-size: 18pt;
+    padding: 12px 6px;
+    height: 75%;
+}
+
+.display-screen {
+}
+
+.card-title {
+  font-family: 'Coiny', cursive;
+  font-size: 33px !important;
+  margin-bottom: 40px !important;
+}
+
+.quote-text {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 24px;
+}
